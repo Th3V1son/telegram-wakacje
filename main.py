@@ -23,7 +23,7 @@ def sendmsg():
         bot.send_message(CHANNEL_ID, "Do wakacji zostało: " + str(diff.days) + " dni")
 
 
-schedule.every().day.at("00:30").do(sendmsg)
+schedule.every().day.at("07:00").do(sendmsg)
 
 while 1:
     schedule.run_pending()
